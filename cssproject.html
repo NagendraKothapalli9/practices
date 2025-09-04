@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <style>
+            *{ 
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, sans-serif;
+                background-color: blue;
+                display: flex;
+                justify-content: center;
+                align-items: center ;
+                height: 100vh;
+                padding: 40px;
+            }
+            .pricing-container{
+                display: flex;
+                justify-content:center;
+                gap: 30px;
+                flex-wrap: wrap;
+            }
+            .pricing-card{
+                background-color:aqua;
+                box-shadow: 0 4px 5px red;
+                text-align: center;
+                border-radius: 8px;
+                padding: 20px;
+                width: 300px;
+                transition: transform 0.3s ease;
+            }
+
+            .pricing-card:hover {
+                transform :translateY(-10px);
+            }
+            .pricing-card .plan-name{
+                font-size: 1.8em;
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: green;
+            }
+            .pricing-card .price{
+                font-size:1.5em ;
+                font-weight: bold;
+                color:crimson ;
+                margin-bottom: 20px;
+            }
+            .pricing-card .price span{
+                font-size: 0.8em;
+                color: blue;
+            }
+            .pricing-card .features{
+                list-style: none;
+                margin-bottom: 40px;
+            }
+            .pricing-card .features li{
+                margin-bottom: 10px;
+                color: green;
+            }
+            .pricing-card .cta-button{
+                background-color: darkmagenta;
+                color: chocolate;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 30px;
+                font-size: 1.1em;
+                text-decoration:none ;
+                transition: background-color 0.3s ease;
+            }
+            .pricing-card .cta-button:hover {
+             background-color: green;
+            }
+
+            /* responsive design*/
+            @media (max-width:750px) {
+               .pricing-container{
+                flex-direction: column;
+                align-items: center;
+               }
+ 
+                .pricing-card{
+                    width: 80%;
+                    margin-bottom: 20px;
+
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pricing-container">
+            <div class="pricing-card">
+            <div class= plan-name>Basic plan</div>
+            <div class="price">100rs <span>/month</span></div>
+            <ul class="features">
+                <li>30gb</li>
+                <li>5 users</li>
+                <li>email support</li>
+            </ul>
+            <a href="#" class="cta-button">choose plan</a>
+            </div>
+            <div class="pricing-card">
+                <div class="plan-name">pro plan</div>
+                <div class="price">500rs<span>/month</span></div>
+                <ul class="features">
+                    <li>500gb</li>
+                    <li>15 users</li>
+                    <li>email support</li>
+                </ul>
+                <a href="#" class="cta-button">choose plan</a>
+            </div>
+            <div class="pricing-card">
+                <div class="plan-name">premium plan</div>
+                <div class="price">1500<span>/month</span></div>
+                <ul class="features">
+                    <li>unlimited data</li>
+                    <li>unlimited users</li>
+                    <li>email support</li>
+                </ul>
+                <a href="#" class="cta-button">choose plan</a>
+            </div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+    <h1>this is about java script </h1>
+</head>
+<body>
+    <div id="nag"> hello this is html</div>
+    <div id="nirm">
+    <p class="paragraph">paragraph 1</p>
+     <p class="paragraph">paragraph 2</p>
+      <p class="paragraph">paragraph 3</p>
+       <p class="paragraph">paragraph 4</p>
+       </div>
+<script>
+   // document.body.innerHTML= " hi hello"
+   //var nir = document.getElementById("nag");
+    //   nir.innerHTML= "this is id";
+    // var arr= document.getElementsByClassName("paragraph");
+    //arr[1].innerHTML= " this is class"
+//   var arr= document.getElementsByTagName("p");
+ //     for (n=0;n<arr.length;n++)  
+ // {
+//      arr[n].innerHTML= " this is for tag"
+// }
+        var a= document.getElementById("nirm");
+        var ary= a.childNodes;
+        for (x=0;x<ary.length;x++)
+        {
+            ary[x].innerHTML=" this is child nodes"
+        }
+</script>
+ </body>
+</html>

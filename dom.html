@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+              events
+
+        </title>
+    </head>
+    <body>
+        <h1> About java script on mouse</h1>
+        Enter your name :
+        <input type="text" id="fname" onchange="uppercase()">
+        <script>
+            function uppercase() {
+                const a = document.getElementById("fname");
+                a.value = a.value.toUpperCase();
+            }
+        </script>
+        <div onmouseover="mover(this)" onmouseout="mout(this)"
+        style="background-color: red; width: 150px; padding: 50px;
+        height: 25px; margin: 50px;">get over this</div>
+           <script>
+        function mover(obj){
+               obj.innerHTML = "how r u" ;
+               obj.style.backgroundColor = "green";
+            }
+          function mout(obj){
+                obj.innerHTML = "get over this";
+                obj.style.backgroundColor = "red";
+          }
+             </script>
+              
+            <div onmousedown="mdown(this)" onmouseup="mup(this)" 
+            style="background-color: blue;width: 140px; height: 50px;margin: 40px;padding: 50px;"></div>
+            <script>
+                function mdown(obj){
+                    obj.innerHTML = "mouse down";
+                    obj.style.backgroundColor = "pink";
+                }
+
+                function mup(obj){
+                    obj.innerHTML = "mouse up";
+                    obj.style.backgroundColor = "yellow";
+                }
+            </script>
+    </body>
+</html>

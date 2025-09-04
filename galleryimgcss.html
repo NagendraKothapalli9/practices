@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>image gallery</title>
+        <style>
+            body{background-color: blue;
+            text-align: center;}
+            h2{color: chocolate;}
+            .gallery img{width: 400px;
+            height: 300px;
+        border-radius: 40px;
+         padding: 30px;}
+        .gallery img:hover{
+            transform:scale(1.2); 
+        }
+        @media(max-width:aspect-ratio) {.gallery{grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}}
+    
+        </style>
+        </head> 
+    <body>
+        <h2>resposive css image gallery</h2>
+        <div class="gallery">
+            <img src="E:\siri fun\131D7500\DSC_4646.JPG"  alt="image1" ><br>
+            <img src="E:\siri fun\131D7500\DSC_4647.JPG"  alt="image2"><br>
+            <img src="E:\siri fun\131D7500\DSC_4664.JPG"  alt="image3">
+        </div>
+    </body>
+</html>
