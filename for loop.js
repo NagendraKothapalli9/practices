@@ -1,4 +1,6 @@
-for(a=4;a<=10;a++)
+let print = '';
+for(a=400;a>=10;a--)
 {
-    console.log("page no is "+ a);
+    print += "page no is "+ a +'\n' ;
 }
+console.log(print)
